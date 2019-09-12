@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TCJPictureTopicCellView" customModule="Swift_WDJ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rbu-o3-aYU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common-gif" translatesAutoresizingMaskIntoConstraints="NO" id="zJ9-cf-6DV">
+                    <rect key="frame" x="344" y="0.0" width="31" height="31"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaf-1W-3rR">
+                    <rect key="frame" x="0.0" y="332" width="375" height="43"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" title="点击查看大图" image="see-big-picture" backgroundImage="see-big-picture-background">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="seeBigPictureAction" destination="iN0-l3-epB" eventType="touchUpInside" id="haq-ok-rqs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rbu-o3-aYU" secondAttribute="bottom" id="1x0-kr-s9W"/>
+                <constraint firstItem="zJ9-cf-6DV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3K5-BJ-PgZ"/>
+                <constraint firstItem="iaf-1W-3rR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Dp0-4a-26e"/>
+                <constraint firstAttribute="trailing" secondItem="iaf-1W-3rR" secondAttribute="trailing" id="KU8-uZ-mCI"/>
+                <constraint firstAttribute="trailing" secondItem="rbu-o3-aYU" secondAttribute="trailing" id="RYc-bd-paJ"/>
+                <constraint firstAttribute="bottom" secondItem="iaf-1W-3rR" secondAttribute="bottom" id="VMb-lk-OLb"/>
+                <constraint firstAttribute="trailing" secondItem="zJ9-cf-6DV" secondAttribute="trailing" id="Vrw-PP-0ua"/>
+                <constraint firstItem="rbu-o3-aYU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aIr-bk-wwv"/>
+                <constraint firstItem="rbu-o3-aYU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="m9C-bc-vwQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="rbu-o3-aYU" id="YKA-xC-Sny"/>
+                <outlet property="gifImageView" destination="zJ9-cf-6DV" id="iQm-7M-bJF"/>
+                <outlet property="seeBigPictureButton" destination="iaf-1W-3rR" id="PYF-Kk-AIf"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="93.415178571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common-gif" width="31" height="31"/>
+        <image name="see-big-picture" width="19" height="19"/>
+        <image name="see-big-picture-background" width="285" height="43"/>
+    </resources>
+</document>

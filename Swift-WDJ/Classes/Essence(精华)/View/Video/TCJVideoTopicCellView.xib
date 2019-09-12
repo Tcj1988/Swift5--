@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TCJVideoTopicCellView" customModule="Swift_WDJ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CTd-hW-uta">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9U-6X-8hj">
+                    <rect key="frame" x="152" y="152" width="71" height="71"/>
+                    <state key="normal" image="video-play" backgroundImage="playButton"/>
+                    <state key="highlighted" image="video-play" backgroundImage="playButtonClick"/>
+                    <connections>
+                        <action selector="playVideoAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="KSK-SZ-ea8"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzw-8l-roA">
+                    <rect key="frame" x="337.5" y="0.0" width="37.5" height="18"/>
+                    <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vT2-9o-MKX">
+                    <rect key="frame" x="337.5" y="357" width="37.5" height="18"/>
+                    <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uzw-8l-roA" secondAttribute="trailing" id="8Y1-IE-MHZ"/>
+                <constraint firstAttribute="trailing" secondItem="vT2-9o-MKX" secondAttribute="trailing" id="A34-uy-wUR"/>
+                <constraint firstAttribute="bottom" secondItem="CTd-hW-uta" secondAttribute="bottom" id="BfL-xw-KyA"/>
+                <constraint firstItem="CTd-hW-uta" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Cek-Xn-puq"/>
+                <constraint firstAttribute="trailing" secondItem="CTd-hW-uta" secondAttribute="trailing" id="VSa-X3-Po2"/>
+                <constraint firstItem="CTd-hW-uta" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Wpm-aI-pd4"/>
+                <constraint firstItem="D9U-6X-8hj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Y9i-qT-Gl6"/>
+                <constraint firstAttribute="bottom" secondItem="vT2-9o-MKX" secondAttribute="bottom" id="Z85-sn-uLf"/>
+                <constraint firstItem="D9U-6X-8hj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mwa-8j-A3n"/>
+                <constraint firstItem="uzw-8l-roA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nj7-Re-ag2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="CTd-hW-uta" id="imK-1h-5ty"/>
+                <outlet property="playCountLabel" destination="uzw-8l-roA" id="599-Nk-C9B"/>
+                <outlet property="playDurationLabel" destination="vT2-9o-MKX" id="3Rl-ws-rRT"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="playButton" width="63" height="63"/>
+        <image name="playButtonClick" width="63" height="63"/>
+        <image name="video-play" width="71" height="71"/>
+    </resources>
+</document>

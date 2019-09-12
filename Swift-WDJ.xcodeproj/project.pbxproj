@@ -1,0 +1,1084 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0A9B755B4E8D7FF845CA87E /* Pods_Swift_WDJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AC41CE6B1210ED9057BDFD /* Pods_Swift_WDJ.framework */; };
+		D929B84D23274A11000B3923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D929B84C23274A11000B3923 /* Assets.xcassets */; };
+		D929B884232769B9000B3923 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B877232769B9000B3923 /* ViewController.swift */; };
+		D929B885232769B9000B3923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B87A232769B9000B3923 /* AppDelegate.swift */; };
+		D929B89E23276EFC000B3923 /* VGPlayerLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B88723276EFC000B3923 /* VGPlayerLoadingIndicator.swift */; };
+		D929B89F23276EFC000B3923 /* Timer+VGPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B88823276EFC000B3923 /* Timer+VGPlayer.swift */; };
+		D929B8A023276EFC000B3923 /* VGPlayerCacheConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B88A23276EFC000B3923 /* VGPlayerCacheConfiguration.swift */; };
+		D929B8A123276EFC000B3923 /* VGPlayerCacheMediaWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B88B23276EFC000B3923 /* VGPlayerCacheMediaWorker.swift */; };
+		D929B8A223276EFC000B3923 /* VGPlayerDownloadURLSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B88C23276EFC000B3923 /* VGPlayerDownloadURLSessionManager.swift */; };
+		D929B8A323276EFC000B3923 /* VGPlayerCacheMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B88D23276EFC000B3923 /* VGPlayerCacheMedia.swift */; };
+		D929B8A423276EFC000B3923 /* VGPlayerDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B88E23276EFC000B3923 /* VGPlayerDownloader.swift */; };
+		D929B8A523276EFC000B3923 /* VGPlayerResourceLoaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B88F23276EFC000B3923 /* VGPlayerResourceLoaderManager.swift */; };
+		D929B8A623276EFC000B3923 /* VGPlayerCacheMediaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B89023276EFC000B3923 /* VGPlayerCacheMediaConfiguration.swift */; };
+		D929B8A723276EFC000B3923 /* VGPlayerCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B89123276EFC000B3923 /* VGPlayerCacheManager.swift */; };
+		D929B8A823276EFC000B3923 /* VGPlayerResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B89223276EFC000B3923 /* VGPlayerResourceLoader.swift */; };
+		D929B8A923276EFC000B3923 /* VGPlayerResourceLoadingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B89323276EFC000B3923 /* VGPlayerResourceLoadingRequest.swift */; };
+		D929B8AA23276EFC000B3923 /* VGPlayerDownloadActionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B89423276EFC000B3923 /* VGPlayerDownloadActionWorker.swift */; };
+		D929B8AB23276EFC000B3923 /* VGPlayerCacheSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B89523276EFC000B3923 /* VGPlayerCacheSession.swift */; };
+		D929B8AC23276EFC000B3923 /* VGPlayerCacheAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B89623276EFC000B3923 /* VGPlayerCacheAction.swift */; };
+		D929B8AD23276EFC000B3923 /* VGPlayerSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B89723276EFC000B3923 /* VGPlayerSlider.swift */; };
+		D929B8AE23276EFC000B3923 /* VGPlayerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B89823276EFC000B3923 /* VGPlayerUtils.swift */; };
+		D929B8AF23276EFC000B3923 /* UIButton+VGPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B89923276EFC000B3923 /* UIButton+VGPlayer.swift */; };
+		D929B8B023276EFC000B3923 /* VGPlayerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B89A23276EFC000B3923 /* VGPlayerError.swift */; };
+		D929B8B123276EFC000B3923 /* VGSubtitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B89B23276EFC000B3923 /* VGSubtitles.swift */; };
+		D929B8B223276EFC000B3923 /* VGPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B89C23276EFC000B3923 /* VGPlayerView.swift */; };
+		D929B8B323276EFC000B3923 /* VGPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B89D23276EFC000B3923 /* VGPlayer.swift */; };
+		D929B8B5232770C4000B3923 /* Swift-WDJ.sql in Resources */ = {isa = PBXBuildFile; fileRef = D929B8B4232770C4000B3923 /* Swift-WDJ.sql */; };
+		D929B8B723277603000B3923 /* TCJCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8B623277603000B3923 /* TCJCommon.swift */; };
+		D929B8B923277D15000B3923 /* TCJNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8B823277D15000B3923 /* TCJNetworkManager.swift */; };
+		D929B8BB23278628000B3923 /* TCJImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8BA23278628000B3923 /* TCJImageCacheManager.swift */; };
+		D929B8BD23278E45000B3923 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8BC23278E45000B3923 /* UIImage+Extension.swift */; };
+		D929B8BF2327918F000B3923 /* TCJSQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8BE2327918F000B3923 /* TCJSQLiteManager.swift */; };
+		D929B8C123279D61000B3923 /* TCJTopicDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8C023279D61000B3923 /* TCJTopicDAL.swift */; };
+		D929B8C32327A287000B3923 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8C22327A287000B3923 /* Date+Extension.swift */; };
+		D929B8C52327A441000B3923 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8C42327A441000B3923 /* FileManager+Extension.swift */; };
+		D929B8C72327A49C000B3923 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8C62327A49C000B3923 /* Bundle+Extension.swift */; };
+		D929B8C92328874E000B3923 /* PHPhotoLibrary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8C82328874E000B3923 /* PHPhotoLibrary+Extension.swift */; };
+		D929B8CB232887C5000B3923 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8CA232887C5000B3923 /* UIColor+Extension.swift */; };
+		D929B8CD23288802000B3923 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8CC23288802000B3923 /* UILabel+Extension.swift */; };
+		D929B8CF23288834000B3923 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8CE23288834000B3923 /* UIButton+Extension.swift */; };
+		D929B8D123288880000B3923 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8D023288880000B3923 /* UIView+Extension.swift */; };
+		D929B8D3232888E2000B3923 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8D2232888E2000B3923 /* Int+Extension.swift */; };
+		D929B8D523288BA6000B3923 /* TCJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8D423288BA6000B3923 /* TCJNavigationController.swift */; };
+		D929B8D72328904C000B3923 /* TCJEssenceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8D62328904C000B3923 /* TCJEssenceVC.swift */; };
+		D929B8D923289085000B3923 /* TCJFocusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8D823289085000B3923 /* TCJFocusVC.swift */; };
+		D929B8DB232890CF000B3923 /* TCJMineTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8DA232890CF000B3923 /* TCJMineTableVC.swift */; };
+		D929B8DD23289254000B3923 /* TCJNewTopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8DC23289254000B3923 /* TCJNewTopicVC.swift */; };
+		D929B8DF23289346000B3923 /* TCJTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8DE23289346000B3923 /* TCJTabBarVC.swift */; };
+		D929B8E12328C862000B3923 /* TCJTopicTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8E02328C862000B3923 /* TCJTopicTableVC.swift */; };
+		D929B8E32328C924000B3923 /* TCJAllTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8E22328C924000B3923 /* TCJAllTableVC.swift */; };
+		D929B8E52328C992000B3923 /* TCJVideoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8E42328C992000B3923 /* TCJVideoTableVC.swift */; };
+		D929B8E72328C9ED000B3923 /* TCJVoiceTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8E62328C9ED000B3923 /* TCJVoiceTableVC.swift */; };
+		D929B8E92328CA39000B3923 /* TCJPictureTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8E82328CA39000B3923 /* TCJPictureTableVC.swift */; };
+		D929B8EB2328CCC2000B3923 /* TCJWordTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8EA2328CCC2000B3923 /* TCJWordTableVC.swift */; };
+		D929B8ED2328CF0E000B3923 /* TCJUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8EC2328CF0E000B3923 /* TCJUserModel.swift */; };
+		D929B8EF2328D122000B3923 /* TCJHotCommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8EE2328D122000B3923 /* TCJHotCommentModel.swift */; };
+		D929B8F12328D2AF000B3923 /* TCJTopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8F02328D2AF000B3923 /* TCJTopicModel.swift */; };
+		D929B8F32328D7BD000B3923 /* TCJTopicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8F22328D7BD000B3923 /* TCJTopicViewModel.swift */; };
+		D929B8F52328D907000B3923 /* TCJTopicListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8F42328D907000B3923 /* TCJTopicListViewModel.swift */; };
+		D929B8F72328DAD5000B3923 /* TCJTopicCellTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8F62328DAD5000B3923 /* TCJTopicCellTopView.swift */; };
+		D929B8F92328DB2A000B3923 /* TCJTopicCellTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D929B8F82328DB2A000B3923 /* TCJTopicCellTopView.xib */; };
+		D929B8FB2328F102000B3923 /* TCJTopicCellBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8FA2328F102000B3923 /* TCJTopicCellBottomView.swift */; };
+		D929B8FD2328F185000B3923 /* TCJTopicCellBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D929B8FC2328F185000B3923 /* TCJTopicCellBottomView.xib */; };
+		D929B8FF2329D7AC000B3923 /* TCJHotCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B8FE2329D7AC000B3923 /* TCJHotCommentView.swift */; };
+		D929B9012329D958000B3923 /* TCJHotCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D929B9002329D958000B3923 /* TCJHotCommentView.xib */; };
+		D929B9032329DBF1000B3923 /* TCJBaseTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B9022329DBF1000B3923 /* TCJBaseTopicTableViewCell.swift */; };
+		D929B9052329E7F0000B3923 /* TCJPictureTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B9042329E7F0000B3923 /* TCJPictureTopicTableViewCell.swift */; };
+		D929B9072329E845000B3923 /* TCJVideoTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B9062329E845000B3923 /* TCJVideoTopicTableViewCell.swift */; };
+		D929B9092329E870000B3923 /* TCJVoiceTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B9082329E870000B3923 /* TCJVoiceTopicTableViewCell.swift */; };
+		D929B90B2329E88D000B3923 /* TCJWordTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B90A2329E88D000B3923 /* TCJWordTopicTableViewCell.swift */; };
+		D929B90E2329ECCE000B3923 /* TCJTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B90D2329ECCE000B3923 /* TCJTransitionAnimation.swift */; };
+		D929B9102329ED60000B3923 /* TCJSeeBigPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B90F2329ED60000B3923 /* TCJSeeBigPictureViewController.swift */; };
+		D929B9122329EE92000B3923 /* TCJPictureTopicCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B9112329EE92000B3923 /* TCJPictureTopicCellView.swift */; };
+		D929B9142329EF63000B3923 /* TCJPictureTopicCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D929B9132329EF63000B3923 /* TCJPictureTopicCellView.xib */; };
+		D929B916232A0C64000B3923 /* TCJVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B915232A0C64000B3923 /* TCJVideoPlayerViewController.swift */; };
+		D929B918232A0E44000B3923 /* TCJVideoTopicCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B917232A0E44000B3923 /* TCJVideoTopicCellView.swift */; };
+		D929B91A232A0E56000B3923 /* TCJVideoTopicCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D929B919232A0E56000B3923 /* TCJVideoTopicCellView.xib */; };
+		D929B91C232A1399000B3923 /* TCJVoicePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B91B232A1399000B3923 /* TCJVoicePlayerViewController.swift */; };
+		D929B91E232A1571000B3923 /* TCJVoicePlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D929B91D232A1571000B3923 /* TCJVoicePlayerViewController.xib */; };
+		D929B920232A18D2000B3923 /* TCJVoiceTopicCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929B91F232A18D2000B3923 /* TCJVoiceTopicCellView.swift */; };
+		D929B922232A1981000B3923 /* TCJVoiceTopicCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D929B921232A1981000B3923 /* TCJVoiceTopicCellView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		73AC41CE6B1210ED9057BDFD /* Pods_Swift_WDJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_WDJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75239E368457D9CD3F31C402 /* Pods-Swift-WDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-WDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift-WDJ/Pods-Swift-WDJ.debug.xcconfig"; sourceTree = "<group>"; };
+		77A74584988125EE0D48C8FA /* Pods-Swift-WDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-WDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift-WDJ/Pods-Swift-WDJ.release.xcconfig"; sourceTree = "<group>"; };
+		D929B84223274A0F000B3923 /* Swift-WDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-WDJ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D929B84C23274A11000B3923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D929B85123274A11000B3923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D929B877232769B9000B3923 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D929B87A232769B9000B3923 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D929B88723276EFC000B3923 /* VGPlayerLoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerLoadingIndicator.swift; sourceTree = "<group>"; };
+		D929B88823276EFC000B3923 /* Timer+VGPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+VGPlayer.swift"; sourceTree = "<group>"; };
+		D929B88A23276EFC000B3923 /* VGPlayerCacheConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerCacheConfiguration.swift; sourceTree = "<group>"; };
+		D929B88B23276EFC000B3923 /* VGPlayerCacheMediaWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerCacheMediaWorker.swift; sourceTree = "<group>"; };
+		D929B88C23276EFC000B3923 /* VGPlayerDownloadURLSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerDownloadURLSessionManager.swift; sourceTree = "<group>"; };
+		D929B88D23276EFC000B3923 /* VGPlayerCacheMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerCacheMedia.swift; sourceTree = "<group>"; };
+		D929B88E23276EFC000B3923 /* VGPlayerDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerDownloader.swift; sourceTree = "<group>"; };
+		D929B88F23276EFC000B3923 /* VGPlayerResourceLoaderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerResourceLoaderManager.swift; sourceTree = "<group>"; };
+		D929B89023276EFC000B3923 /* VGPlayerCacheMediaConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerCacheMediaConfiguration.swift; sourceTree = "<group>"; };
+		D929B89123276EFC000B3923 /* VGPlayerCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerCacheManager.swift; sourceTree = "<group>"; };
+		D929B89223276EFC000B3923 /* VGPlayerResourceLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerResourceLoader.swift; sourceTree = "<group>"; };
+		D929B89323276EFC000B3923 /* VGPlayerResourceLoadingRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerResourceLoadingRequest.swift; sourceTree = "<group>"; };
+		D929B89423276EFC000B3923 /* VGPlayerDownloadActionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerDownloadActionWorker.swift; sourceTree = "<group>"; };
+		D929B89523276EFC000B3923 /* VGPlayerCacheSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerCacheSession.swift; sourceTree = "<group>"; };
+		D929B89623276EFC000B3923 /* VGPlayerCacheAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerCacheAction.swift; sourceTree = "<group>"; };
+		D929B89723276EFC000B3923 /* VGPlayerSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerSlider.swift; sourceTree = "<group>"; };
+		D929B89823276EFC000B3923 /* VGPlayerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerUtils.swift; sourceTree = "<group>"; };
+		D929B89923276EFC000B3923 /* UIButton+VGPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+VGPlayer.swift"; sourceTree = "<group>"; };
+		D929B89A23276EFC000B3923 /* VGPlayerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerError.swift; sourceTree = "<group>"; };
+		D929B89B23276EFC000B3923 /* VGSubtitles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGSubtitles.swift; sourceTree = "<group>"; };
+		D929B89C23276EFC000B3923 /* VGPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayerView.swift; sourceTree = "<group>"; };
+		D929B89D23276EFC000B3923 /* VGPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGPlayer.swift; sourceTree = "<group>"; };
+		D929B8B4232770C4000B3923 /* Swift-WDJ.sql */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Swift-WDJ.sql"; sourceTree = "<group>"; };
+		D929B8B623277603000B3923 /* TCJCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJCommon.swift; sourceTree = "<group>"; };
+		D929B8B823277D15000B3923 /* TCJNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJNetworkManager.swift; sourceTree = "<group>"; };
+		D929B8BA23278628000B3923 /* TCJImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJImageCacheManager.swift; sourceTree = "<group>"; };
+		D929B8BC23278E45000B3923 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		D929B8BE2327918F000B3923 /* TCJSQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJSQLiteManager.swift; sourceTree = "<group>"; };
+		D929B8C023279D61000B3923 /* TCJTopicDAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJTopicDAL.swift; sourceTree = "<group>"; };
+		D929B8C22327A287000B3923 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		D929B8C42327A441000B3923 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		D929B8C62327A49C000B3923 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		D929B8C82328874E000B3923 /* PHPhotoLibrary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHPhotoLibrary+Extension.swift"; sourceTree = "<group>"; };
+		D929B8CA232887C5000B3923 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D929B8CC23288802000B3923 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		D929B8CE23288834000B3923 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		D929B8D023288880000B3923 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D929B8D2232888E2000B3923 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		D929B8D423288BA6000B3923 /* TCJNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJNavigationController.swift; sourceTree = "<group>"; };
+		D929B8D62328904C000B3923 /* TCJEssenceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJEssenceVC.swift; sourceTree = "<group>"; };
+		D929B8D823289085000B3923 /* TCJFocusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJFocusVC.swift; sourceTree = "<group>"; };
+		D929B8DA232890CF000B3923 /* TCJMineTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJMineTableVC.swift; sourceTree = "<group>"; };
+		D929B8DC23289254000B3923 /* TCJNewTopicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJNewTopicVC.swift; sourceTree = "<group>"; };
+		D929B8DE23289346000B3923 /* TCJTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJTabBarVC.swift; sourceTree = "<group>"; };
+		D929B8E02328C862000B3923 /* TCJTopicTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJTopicTableVC.swift; sourceTree = "<group>"; };
+		D929B8E22328C924000B3923 /* TCJAllTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJAllTableVC.swift; sourceTree = "<group>"; };
+		D929B8E42328C992000B3923 /* TCJVideoTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJVideoTableVC.swift; sourceTree = "<group>"; };
+		D929B8E62328C9ED000B3923 /* TCJVoiceTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJVoiceTableVC.swift; sourceTree = "<group>"; };
+		D929B8E82328CA39000B3923 /* TCJPictureTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJPictureTableVC.swift; sourceTree = "<group>"; };
+		D929B8EA2328CCC2000B3923 /* TCJWordTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJWordTableVC.swift; sourceTree = "<group>"; };
+		D929B8EC2328CF0E000B3923 /* TCJUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJUserModel.swift; sourceTree = "<group>"; };
+		D929B8EE2328D122000B3923 /* TCJHotCommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJHotCommentModel.swift; sourceTree = "<group>"; };
+		D929B8F02328D2AF000B3923 /* TCJTopicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJTopicModel.swift; sourceTree = "<group>"; };
+		D929B8F22328D7BD000B3923 /* TCJTopicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJTopicViewModel.swift; sourceTree = "<group>"; };
+		D929B8F42328D907000B3923 /* TCJTopicListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJTopicListViewModel.swift; sourceTree = "<group>"; };
+		D929B8F62328DAD5000B3923 /* TCJTopicCellTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJTopicCellTopView.swift; sourceTree = "<group>"; };
+		D929B8F82328DB2A000B3923 /* TCJTopicCellTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCJTopicCellTopView.xib; sourceTree = "<group>"; };
+		D929B8FA2328F102000B3923 /* TCJTopicCellBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJTopicCellBottomView.swift; sourceTree = "<group>"; };
+		D929B8FC2328F185000B3923 /* TCJTopicCellBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCJTopicCellBottomView.xib; sourceTree = "<group>"; };
+		D929B8FE2329D7AC000B3923 /* TCJHotCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJHotCommentView.swift; sourceTree = "<group>"; };
+		D929B9002329D958000B3923 /* TCJHotCommentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCJHotCommentView.xib; sourceTree = "<group>"; };
+		D929B9022329DBF1000B3923 /* TCJBaseTopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJBaseTopicTableViewCell.swift; sourceTree = "<group>"; };
+		D929B9042329E7F0000B3923 /* TCJPictureTopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJPictureTopicTableViewCell.swift; sourceTree = "<group>"; };
+		D929B9062329E845000B3923 /* TCJVideoTopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJVideoTopicTableViewCell.swift; sourceTree = "<group>"; };
+		D929B9082329E870000B3923 /* TCJVoiceTopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJVoiceTopicTableViewCell.swift; sourceTree = "<group>"; };
+		D929B90A2329E88D000B3923 /* TCJWordTopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJWordTopicTableViewCell.swift; sourceTree = "<group>"; };
+		D929B90D2329ECCE000B3923 /* TCJTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJTransitionAnimation.swift; sourceTree = "<group>"; };
+		D929B90F2329ED60000B3923 /* TCJSeeBigPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJSeeBigPictureViewController.swift; sourceTree = "<group>"; };
+		D929B9112329EE92000B3923 /* TCJPictureTopicCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJPictureTopicCellView.swift; sourceTree = "<group>"; };
+		D929B9132329EF63000B3923 /* TCJPictureTopicCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCJPictureTopicCellView.xib; sourceTree = "<group>"; };
+		D929B915232A0C64000B3923 /* TCJVideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJVideoPlayerViewController.swift; sourceTree = "<group>"; };
+		D929B917232A0E44000B3923 /* TCJVideoTopicCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJVideoTopicCellView.swift; sourceTree = "<group>"; };
+		D929B919232A0E56000B3923 /* TCJVideoTopicCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCJVideoTopicCellView.xib; sourceTree = "<group>"; };
+		D929B91B232A1399000B3923 /* TCJVoicePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJVoicePlayerViewController.swift; sourceTree = "<group>"; };
+		D929B91D232A1571000B3923 /* TCJVoicePlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCJVoicePlayerViewController.xib; sourceTree = "<group>"; };
+		D929B91F232A18D2000B3923 /* TCJVoiceTopicCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCJVoiceTopicCellView.swift; sourceTree = "<group>"; };
+		D929B921232A1981000B3923 /* TCJVoiceTopicCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCJVoiceTopicCellView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D929B83F23274A0F000B3923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0A9B755B4E8D7FF845CA87E /* Pods_Swift_WDJ.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090CED5D79A2D1B4BEE0006A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73AC41CE6B1210ED9057BDFD /* Pods_Swift_WDJ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88872CF1B69717010C7033AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75239E368457D9CD3F31C402 /* Pods-Swift-WDJ.debug.xcconfig */,
+				77A74584988125EE0D48C8FA /* Pods-Swift-WDJ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D929B83923274A0F000B3923 = {
+			isa = PBXGroup;
+			children = (
+				D929B84423274A0F000B3923 /* Swift-WDJ */,
+				D929B84323274A0F000B3923 /* Products */,
+				88872CF1B69717010C7033AE /* Pods */,
+				090CED5D79A2D1B4BEE0006A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D929B84323274A0F000B3923 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D929B84223274A0F000B3923 /* Swift-WDJ.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D929B84423274A0F000B3923 /* Swift-WDJ */ = {
+			isa = PBXGroup;
+			children = (
+				D929B857232769B9000B3923 /* Classes */,
+				D929B84C23274A11000B3923 /* Assets.xcassets */,
+				D929B85123274A11000B3923 /* Info.plist */,
+			);
+			path = "Swift-WDJ";
+			sourceTree = "<group>";
+		};
+		D929B857232769B9000B3923 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D929B858232769B9000B3923 /* Essence(精华) */,
+				D929B862232769B9000B3923 /* Focus(关注) */,
+				D929B866232769B9000B3923 /* Mine(我的) */,
+				D929B86A232769B9000B3923 /* New(新帖) */,
+				D929B86E232769B9000B3923 /* Setting(设置) */,
+				D929B872232769B9000B3923 /* AD(广告) */,
+				D929B876232769B9000B3923 /* Other(其他) */,
+				D929B87C232769B9000B3923 /* Main(主要) */,
+				D929B880232769B9000B3923 /* Publish(发布) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D929B858232769B9000B3923 /* Essence(精华) */ = {
+			isa = PBXGroup;
+			children = (
+				D929B859232769B9000B3923 /* ViewModel */,
+				D929B85A232769B9000B3923 /* Model */,
+				D929B85B232769B9000B3923 /* View */,
+			);
+			path = "Essence(精华)";
+			sourceTree = "<group>";
+		};
+		D929B859232769B9000B3923 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D929B8F22328D7BD000B3923 /* TCJTopicViewModel.swift */,
+				D929B8F42328D907000B3923 /* TCJTopicListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D929B85A232769B9000B3923 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D929B8EC2328CF0E000B3923 /* TCJUserModel.swift */,
+				D929B8EE2328D122000B3923 /* TCJHotCommentModel.swift */,
+				D929B8F02328D2AF000B3923 /* TCJTopicModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D929B85B232769B9000B3923 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D929B85F232769B9000B3923 /* Cell */,
+				D929B85D232769B9000B3923 /* Picture */,
+				D929B85C232769B9000B3923 /* Video */,
+				D929B85E232769B9000B3923 /* All */,
+				D929B860232769B9000B3923 /* Voice */,
+				D929B861232769B9000B3923 /* Word */,
+				D929B8D62328904C000B3923 /* TCJEssenceVC.swift */,
+				D929B8E02328C862000B3923 /* TCJTopicTableVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D929B85C232769B9000B3923 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				D929B8E42328C992000B3923 /* TCJVideoTableVC.swift */,
+				D929B9062329E845000B3923 /* TCJVideoTopicTableViewCell.swift */,
+				D929B915232A0C64000B3923 /* TCJVideoPlayerViewController.swift */,
+				D929B917232A0E44000B3923 /* TCJVideoTopicCellView.swift */,
+				D929B919232A0E56000B3923 /* TCJVideoTopicCellView.xib */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		D929B85D232769B9000B3923 /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				D929B90C2329EC6D000B3923 /* SeeBigPicture */,
+				D929B8E82328CA39000B3923 /* TCJPictureTableVC.swift */,
+				D929B9042329E7F0000B3923 /* TCJPictureTopicTableViewCell.swift */,
+				D929B9112329EE92000B3923 /* TCJPictureTopicCellView.swift */,
+				D929B9132329EF63000B3923 /* TCJPictureTopicCellView.xib */,
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
+		D929B85E232769B9000B3923 /* All */ = {
+			isa = PBXGroup;
+			children = (
+				D929B8E22328C924000B3923 /* TCJAllTableVC.swift */,
+			);
+			path = All;
+			sourceTree = "<group>";
+		};
+		D929B85F232769B9000B3923 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D929B8F62328DAD5000B3923 /* TCJTopicCellTopView.swift */,
+				D929B8F82328DB2A000B3923 /* TCJTopicCellTopView.xib */,
+				D929B8FA2328F102000B3923 /* TCJTopicCellBottomView.swift */,
+				D929B8FC2328F185000B3923 /* TCJTopicCellBottomView.xib */,
+				D929B8FE2329D7AC000B3923 /* TCJHotCommentView.swift */,
+				D929B9002329D958000B3923 /* TCJHotCommentView.xib */,
+				D929B9022329DBF1000B3923 /* TCJBaseTopicTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D929B860232769B9000B3923 /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				D929B8E62328C9ED000B3923 /* TCJVoiceTableVC.swift */,
+				D929B9082329E870000B3923 /* TCJVoiceTopicTableViewCell.swift */,
+				D929B91F232A18D2000B3923 /* TCJVoiceTopicCellView.swift */,
+				D929B921232A1981000B3923 /* TCJVoiceTopicCellView.xib */,
+				D929B91B232A1399000B3923 /* TCJVoicePlayerViewController.swift */,
+				D929B91D232A1571000B3923 /* TCJVoicePlayerViewController.xib */,
+			);
+			path = Voice;
+			sourceTree = "<group>";
+		};
+		D929B861232769B9000B3923 /* Word */ = {
+			isa = PBXGroup;
+			children = (
+				D929B8EA2328CCC2000B3923 /* TCJWordTableVC.swift */,
+				D929B90A2329E88D000B3923 /* TCJWordTopicTableViewCell.swift */,
+			);
+			path = Word;
+			sourceTree = "<group>";
+		};
+		D929B862232769B9000B3923 /* Focus(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				D929B863232769B9000B3923 /* ViewModel */,
+				D929B864232769B9000B3923 /* Model */,
+				D929B865232769B9000B3923 /* View */,
+			);
+			path = "Focus(关注)";
+			sourceTree = "<group>";
+		};
+		D929B863232769B9000B3923 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D929B864232769B9000B3923 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D929B865232769B9000B3923 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D929B8D823289085000B3923 /* TCJFocusVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D929B866232769B9000B3923 /* Mine(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				D929B867232769B9000B3923 /* ViewModel */,
+				D929B868232769B9000B3923 /* Model */,
+				D929B869232769B9000B3923 /* View */,
+			);
+			path = "Mine(我的)";
+			sourceTree = "<group>";
+		};
+		D929B867232769B9000B3923 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D929B868232769B9000B3923 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D929B869232769B9000B3923 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D929B8DA232890CF000B3923 /* TCJMineTableVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D929B86A232769B9000B3923 /* New(新帖) */ = {
+			isa = PBXGroup;
+			children = (
+				D929B86B232769B9000B3923 /* ViewModel */,
+				D929B86C232769B9000B3923 /* Model */,
+				D929B86D232769B9000B3923 /* View */,
+			);
+			path = "New(新帖)";
+			sourceTree = "<group>";
+		};
+		D929B86B232769B9000B3923 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D929B86C232769B9000B3923 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D929B86D232769B9000B3923 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D929B8DC23289254000B3923 /* TCJNewTopicVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D929B86E232769B9000B3923 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				D929B86F232769B9000B3923 /* ViewModel */,
+				D929B870232769B9000B3923 /* Model */,
+				D929B871232769B9000B3923 /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		D929B86F232769B9000B3923 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D929B870232769B9000B3923 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D929B871232769B9000B3923 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D929B872232769B9000B3923 /* AD(广告) */ = {
+			isa = PBXGroup;
+			children = (
+				D929B873232769B9000B3923 /* ViewModel */,
+				D929B874232769B9000B3923 /* Model */,
+				D929B875232769B9000B3923 /* View */,
+			);
+			path = "AD(广告)";
+			sourceTree = "<group>";
+		};
+		D929B873232769B9000B3923 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D929B874232769B9000B3923 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D929B875232769B9000B3923 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D929B876232769B9000B3923 /* Other(其他) */ = {
+			isa = PBXGroup;
+			children = (
+				D929B87A232769B9000B3923 /* AppDelegate.swift */,
+				D929B877232769B9000B3923 /* ViewController.swift */,
+				D929B88623276EFC000B3923 /* VGPlayer */,
+				D929B878232769B9000B3923 /* Category */,
+				D929B879232769B9000B3923 /* Common */,
+				D929B87B232769B9000B3923 /* Tool(业务类) */,
+			);
+			path = "Other(其他)";
+			sourceTree = "<group>";
+		};
+		D929B878232769B9000B3923 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D929B8BC23278E45000B3923 /* UIImage+Extension.swift */,
+				D929B8C22327A287000B3923 /* Date+Extension.swift */,
+				D929B8C42327A441000B3923 /* FileManager+Extension.swift */,
+				D929B8C62327A49C000B3923 /* Bundle+Extension.swift */,
+				D929B8C82328874E000B3923 /* PHPhotoLibrary+Extension.swift */,
+				D929B8CA232887C5000B3923 /* UIColor+Extension.swift */,
+				D929B8CC23288802000B3923 /* UILabel+Extension.swift */,
+				D929B8CE23288834000B3923 /* UIButton+Extension.swift */,
+				D929B8D023288880000B3923 /* UIView+Extension.swift */,
+				D929B8D2232888E2000B3923 /* Int+Extension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D929B879232769B9000B3923 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D929B8B623277603000B3923 /* TCJCommon.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D929B87B232769B9000B3923 /* Tool(业务类) */ = {
+			isa = PBXGroup;
+			children = (
+				D929B8B4232770C4000B3923 /* Swift-WDJ.sql */,
+				D929B8B823277D15000B3923 /* TCJNetworkManager.swift */,
+				D929B8BA23278628000B3923 /* TCJImageCacheManager.swift */,
+				D929B8BE2327918F000B3923 /* TCJSQLiteManager.swift */,
+				D929B8C023279D61000B3923 /* TCJTopicDAL.swift */,
+			);
+			path = "Tool(业务类)";
+			sourceTree = "<group>";
+		};
+		D929B87C232769B9000B3923 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				D929B87D232769B9000B3923 /* ViewModel */,
+				D929B87E232769B9000B3923 /* Model */,
+				D929B87F232769B9000B3923 /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		D929B87D232769B9000B3923 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D929B87E232769B9000B3923 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D929B87F232769B9000B3923 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D929B8D423288BA6000B3923 /* TCJNavigationController.swift */,
+				D929B8DE23289346000B3923 /* TCJTabBarVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D929B880232769B9000B3923 /* Publish(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				D929B881232769B9000B3923 /* ViewModel */,
+				D929B882232769B9000B3923 /* Model */,
+				D929B883232769B9000B3923 /* View */,
+			);
+			path = "Publish(发布)";
+			sourceTree = "<group>";
+		};
+		D929B881232769B9000B3923 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D929B882232769B9000B3923 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D929B883232769B9000B3923 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D929B88623276EFC000B3923 /* VGPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				D929B88923276EFC000B3923 /* MediaCache */,
+				D929B88823276EFC000B3923 /* Timer+VGPlayer.swift */,
+				D929B89923276EFC000B3923 /* UIButton+VGPlayer.swift */,
+				D929B89D23276EFC000B3923 /* VGPlayer.swift */,
+				D929B89A23276EFC000B3923 /* VGPlayerError.swift */,
+				D929B88723276EFC000B3923 /* VGPlayerLoadingIndicator.swift */,
+				D929B89723276EFC000B3923 /* VGPlayerSlider.swift */,
+				D929B89823276EFC000B3923 /* VGPlayerUtils.swift */,
+				D929B89C23276EFC000B3923 /* VGPlayerView.swift */,
+				D929B89B23276EFC000B3923 /* VGSubtitles.swift */,
+			);
+			path = VGPlayer;
+			sourceTree = "<group>";
+		};
+		D929B88923276EFC000B3923 /* MediaCache */ = {
+			isa = PBXGroup;
+			children = (
+				D929B88A23276EFC000B3923 /* VGPlayerCacheConfiguration.swift */,
+				D929B88B23276EFC000B3923 /* VGPlayerCacheMediaWorker.swift */,
+				D929B88C23276EFC000B3923 /* VGPlayerDownloadURLSessionManager.swift */,
+				D929B88D23276EFC000B3923 /* VGPlayerCacheMedia.swift */,
+				D929B88E23276EFC000B3923 /* VGPlayerDownloader.swift */,
+				D929B88F23276EFC000B3923 /* VGPlayerResourceLoaderManager.swift */,
+				D929B89023276EFC000B3923 /* VGPlayerCacheMediaConfiguration.swift */,
+				D929B89123276EFC000B3923 /* VGPlayerCacheManager.swift */,
+				D929B89223276EFC000B3923 /* VGPlayerResourceLoader.swift */,
+				D929B89323276EFC000B3923 /* VGPlayerResourceLoadingRequest.swift */,
+				D929B89423276EFC000B3923 /* VGPlayerDownloadActionWorker.swift */,
+				D929B89523276EFC000B3923 /* VGPlayerCacheSession.swift */,
+				D929B89623276EFC000B3923 /* VGPlayerCacheAction.swift */,
+			);
+			path = MediaCache;
+			sourceTree = "<group>";
+		};
+		D929B90C2329EC6D000B3923 /* SeeBigPicture */ = {
+			isa = PBXGroup;
+			children = (
+				D929B90D2329ECCE000B3923 /* TCJTransitionAnimation.swift */,
+				D929B90F2329ED60000B3923 /* TCJSeeBigPictureViewController.swift */,
+			);
+			path = SeeBigPicture;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D929B84123274A0F000B3923 /* Swift-WDJ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D929B85423274A11000B3923 /* Build configuration list for PBXNativeTarget "Swift-WDJ" */;
+			buildPhases = (
+				CB99583D2607067CE6FEE5AF /* [CP] Check Pods Manifest.lock */,
+				D929B83E23274A0F000B3923 /* Sources */,
+				D929B83F23274A0F000B3923 /* Frameworks */,
+				D929B84023274A0F000B3923 /* Resources */,
+				F51D2CB5A9F2C543B44BA1E6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift-WDJ";
+			productName = "Swift-WDJ";
+			productReference = D929B84223274A0F000B3923 /* Swift-WDJ.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D929B83A23274A0F000B3923 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TCJ;
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = tangchangjiang;
+				TargetAttributes = {
+					D929B84123274A0F000B3923 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = D929B83D23274A0F000B3923 /* Build configuration list for PBXProject "Swift-WDJ" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D929B83923274A0F000B3923;
+			productRefGroup = D929B84323274A0F000B3923 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D929B84123274A0F000B3923 /* Swift-WDJ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D929B84023274A0F000B3923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D929B91E232A1571000B3923 /* TCJVoicePlayerViewController.xib in Resources */,
+				D929B91A232A0E56000B3923 /* TCJVideoTopicCellView.xib in Resources */,
+				D929B9012329D958000B3923 /* TCJHotCommentView.xib in Resources */,
+				D929B922232A1981000B3923 /* TCJVoiceTopicCellView.xib in Resources */,
+				D929B84D23274A11000B3923 /* Assets.xcassets in Resources */,
+				D929B8F92328DB2A000B3923 /* TCJTopicCellTopView.xib in Resources */,
+				D929B8B5232770C4000B3923 /* Swift-WDJ.sql in Resources */,
+				D929B8FD2328F185000B3923 /* TCJTopicCellBottomView.xib in Resources */,
+				D929B9142329EF63000B3923 /* TCJPictureTopicCellView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CB99583D2607067CE6FEE5AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swift-WDJ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F51D2CB5A9F2C543B44BA1E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Swift-WDJ/Pods-Swift-WDJ-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/FreeStreamer/FreeStreamer.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FreeStreamer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift-WDJ/Pods-Swift-WDJ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D929B83E23274A0F000B3923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D929B8F32328D7BD000B3923 /* TCJTopicViewModel.swift in Sources */,
+				D929B8AA23276EFC000B3923 /* VGPlayerDownloadActionWorker.swift in Sources */,
+				D929B8AF23276EFC000B3923 /* UIButton+VGPlayer.swift in Sources */,
+				D929B8A523276EFC000B3923 /* VGPlayerResourceLoaderManager.swift in Sources */,
+				D929B8AD23276EFC000B3923 /* VGPlayerSlider.swift in Sources */,
+				D929B89E23276EFC000B3923 /* VGPlayerLoadingIndicator.swift in Sources */,
+				D929B918232A0E44000B3923 /* TCJVideoTopicCellView.swift in Sources */,
+				D929B8D523288BA6000B3923 /* TCJNavigationController.swift in Sources */,
+				D929B8A923276EFC000B3923 /* VGPlayerResourceLoadingRequest.swift in Sources */,
+				D929B8A723276EFC000B3923 /* VGPlayerCacheManager.swift in Sources */,
+				D929B920232A18D2000B3923 /* TCJVoiceTopicCellView.swift in Sources */,
+				D929B8AE23276EFC000B3923 /* VGPlayerUtils.swift in Sources */,
+				D929B9072329E845000B3923 /* TCJVideoTopicTableViewCell.swift in Sources */,
+				D929B8F72328DAD5000B3923 /* TCJTopicCellTopView.swift in Sources */,
+				D929B8E52328C992000B3923 /* TCJVideoTableVC.swift in Sources */,
+				D929B8DD23289254000B3923 /* TCJNewTopicVC.swift in Sources */,
+				D929B8CD23288802000B3923 /* UILabel+Extension.swift in Sources */,
+				D929B8FF2329D7AC000B3923 /* TCJHotCommentView.swift in Sources */,
+				D929B9102329ED60000B3923 /* TCJSeeBigPictureViewController.swift in Sources */,
+				D929B9122329EE92000B3923 /* TCJPictureTopicCellView.swift in Sources */,
+				D929B9092329E870000B3923 /* TCJVoiceTopicTableViewCell.swift in Sources */,
+				D929B8BF2327918F000B3923 /* TCJSQLiteManager.swift in Sources */,
+				D929B8A323276EFC000B3923 /* VGPlayerCacheMedia.swift in Sources */,
+				D929B8ED2328CF0E000B3923 /* TCJUserModel.swift in Sources */,
+				D929B8DB232890CF000B3923 /* TCJMineTableVC.swift in Sources */,
+				D929B8A123276EFC000B3923 /* VGPlayerCacheMediaWorker.swift in Sources */,
+				D929B8D123288880000B3923 /* UIView+Extension.swift in Sources */,
+				D929B90E2329ECCE000B3923 /* TCJTransitionAnimation.swift in Sources */,
+				D929B9052329E7F0000B3923 /* TCJPictureTopicTableViewCell.swift in Sources */,
+				D929B8AB23276EFC000B3923 /* VGPlayerCacheSession.swift in Sources */,
+				D929B8E92328CA39000B3923 /* TCJPictureTableVC.swift in Sources */,
+				D929B8EB2328CCC2000B3923 /* TCJWordTableVC.swift in Sources */,
+				D929B8B323276EFC000B3923 /* VGPlayer.swift in Sources */,
+				D929B8D72328904C000B3923 /* TCJEssenceVC.swift in Sources */,
+				D929B8C32327A287000B3923 /* Date+Extension.swift in Sources */,
+				D929B8CB232887C5000B3923 /* UIColor+Extension.swift in Sources */,
+				D929B9032329DBF1000B3923 /* TCJBaseTopicTableViewCell.swift in Sources */,
+				D929B91C232A1399000B3923 /* TCJVoicePlayerViewController.swift in Sources */,
+				D929B8C123279D61000B3923 /* TCJTopicDAL.swift in Sources */,
+				D929B8B023276EFC000B3923 /* VGPlayerError.swift in Sources */,
+				D929B89F23276EFC000B3923 /* Timer+VGPlayer.swift in Sources */,
+				D929B8A823276EFC000B3923 /* VGPlayerResourceLoader.swift in Sources */,
+				D929B8FB2328F102000B3923 /* TCJTopicCellBottomView.swift in Sources */,
+				D929B8D3232888E2000B3923 /* Int+Extension.swift in Sources */,
+				D929B8BD23278E45000B3923 /* UIImage+Extension.swift in Sources */,
+				D929B8CF23288834000B3923 /* UIButton+Extension.swift in Sources */,
+				D929B8E72328C9ED000B3923 /* TCJVoiceTableVC.swift in Sources */,
+				D929B8DF23289346000B3923 /* TCJTabBarVC.swift in Sources */,
+				D929B916232A0C64000B3923 /* TCJVideoPlayerViewController.swift in Sources */,
+				D929B8B223276EFC000B3923 /* VGPlayerView.swift in Sources */,
+				D929B8B923277D15000B3923 /* TCJNetworkManager.swift in Sources */,
+				D929B8EF2328D122000B3923 /* TCJHotCommentModel.swift in Sources */,
+				D929B8F52328D907000B3923 /* TCJTopicListViewModel.swift in Sources */,
+				D929B8F12328D2AF000B3923 /* TCJTopicModel.swift in Sources */,
+				D929B8B123276EFC000B3923 /* VGSubtitles.swift in Sources */,
+				D929B8E32328C924000B3923 /* TCJAllTableVC.swift in Sources */,
+				D929B8D923289085000B3923 /* TCJFocusVC.swift in Sources */,
+				D929B8E12328C862000B3923 /* TCJTopicTableVC.swift in Sources */,
+				D929B8BB23278628000B3923 /* TCJImageCacheManager.swift in Sources */,
+				D929B8A023276EFC000B3923 /* VGPlayerCacheConfiguration.swift in Sources */,
+				D929B885232769B9000B3923 /* AppDelegate.swift in Sources */,
+				D929B8C72327A49C000B3923 /* Bundle+Extension.swift in Sources */,
+				D929B8C52327A441000B3923 /* FileManager+Extension.swift in Sources */,
+				D929B884232769B9000B3923 /* ViewController.swift in Sources */,
+				D929B90B2329E88D000B3923 /* TCJWordTopicTableViewCell.swift in Sources */,
+				D929B8C92328874E000B3923 /* PHPhotoLibrary+Extension.swift in Sources */,
+				D929B8A623276EFC000B3923 /* VGPlayerCacheMediaConfiguration.swift in Sources */,
+				D929B8AC23276EFC000B3923 /* VGPlayerCacheAction.swift in Sources */,
+				D929B8A423276EFC000B3923 /* VGPlayerDownloader.swift in Sources */,
+				D929B8B723277603000B3923 /* TCJCommon.swift in Sources */,
+				D929B8A223276EFC000B3923 /* VGPlayerDownloadURLSessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D929B85223274A11000B3923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D929B85323274A11000B3923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D929B85523274A11000B3923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75239E368457D9CD3F31C402 /* Pods-Swift-WDJ.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ENDMT652BU;
+				INFOPLIST_FILE = "Swift-WDJ/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tangchangjiang.Swift-WDJ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D929B85623274A11000B3923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77A74584988125EE0D48C8FA /* Pods-Swift-WDJ.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ENDMT652BU;
+				INFOPLIST_FILE = "Swift-WDJ/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tangchangjiang.Swift-WDJ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D929B83D23274A0F000B3923 /* Build configuration list for PBXProject "Swift-WDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D929B85223274A11000B3923 /* Debug */,
+				D929B85323274A11000B3923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D929B85423274A11000B3923 /* Build configuration list for PBXNativeTarget "Swift-WDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D929B85523274A11000B3923 /* Debug */,
+				D929B85623274A11000B3923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D929B83A23274A0F000B3923 /* Project object */;
+}

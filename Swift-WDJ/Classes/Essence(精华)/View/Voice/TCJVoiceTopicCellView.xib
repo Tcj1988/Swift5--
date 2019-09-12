@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TCJVoiceTopicCellView" customModule="Swift_WDJ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="POs-Ic-ZKf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYG-cH-bN0">
+                    <rect key="frame" x="337.5" y="0.0" width="37.5" height="18"/>
+                    <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exf-OJ-Q8t">
+                    <rect key="frame" x="156" y="156" width="63" height="63"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="fmB-d3-Esx"/>
+                        <constraint firstAttribute="height" constant="63" id="svZ-nk-351"/>
+                    </constraints>
+                    <state key="normal" image="playButtonPlay" backgroundImage="playButton"/>
+                    <state key="highlighted" backgroundImage="playButtonClick"/>
+                    <connections>
+                        <action selector="playVoiceAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="f0u-4B-TUP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="862-hY-sL8">
+                    <rect key="frame" x="337" y="357" width="38" height="18"/>
+                    <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="862-hY-sL8" secondAttribute="trailing" id="1yf-Zp-PxZ"/>
+                <constraint firstItem="Exf-OJ-Q8t" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2IO-9j-P9a"/>
+                <constraint firstAttribute="bottom" secondItem="862-hY-sL8" secondAttribute="bottom" id="5aT-7x-pVR"/>
+                <constraint firstAttribute="bottom" secondItem="POs-Ic-ZKf" secondAttribute="bottom" id="8Yn-AG-DhF"/>
+                <constraint firstAttribute="trailing" secondItem="POs-Ic-ZKf" secondAttribute="trailing" id="J0c-oF-fil"/>
+                <constraint firstItem="dYG-cH-bN0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NG2-Qr-YzE"/>
+                <constraint firstAttribute="trailing" secondItem="dYG-cH-bN0" secondAttribute="trailing" id="S3h-XF-wVv"/>
+                <constraint firstItem="POs-Ic-ZKf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XnA-7v-tpx"/>
+                <constraint firstItem="POs-Ic-ZKf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dOA-ZI-LzG"/>
+                <constraint firstItem="Exf-OJ-Q8t" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vZ6-xx-aaJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="POs-Ic-ZKf" id="7an-jq-hhC"/>
+                <outlet property="playCountLabel" destination="dYG-cH-bN0" id="EUt-xU-M63"/>
+                <outlet property="playDurationLabel" destination="862-hY-sL8" id="zkx-Ho-LwK"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="playButton" width="63" height="63"/>
+        <image name="playButtonClick" width="63" height="63"/>
+        <image name="playButtonPlay" width="30" height="30"/>
+    </resources>
+</document>
